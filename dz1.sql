@@ -26,3 +26,19 @@ WHERE productCount > 2;
 SELECT id, productName, productCount, price
 FROM telefon     
 WHERE productCount*price > 100000 AND productCount*price < 145000;
+
+SELECT id, productName, manufacturer, productCount, price
+FROM telefon     
+WHERE productName LIKE "iPhone%";
+
+SELECT id, productName, manufacturer, productCount, price
+FROM telefon     
+WHERE productName LIKE "Galaxy%";
+
+SELECT id, productName, manufacturer, productCount, price
+FROM telefon     
+WHERE productName LIKE "%8%";
+
+SELECT id, productName, manufacturer, productCount, price
+FROM telefon     
+WHERE REGEXP_LIKE(productName, '[[:digit:]]');
