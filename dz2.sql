@@ -53,5 +53,5 @@ CASE
 	WHEN orderStatus = 'закрыт' THEN 'Заказ закрыт.'
 	WHEN orderStatus = 'отменен' THEN 'Заказ отменен.'
 	ELSE 'не установлен'
-END AS orderSum
+END AS fullOrderStatus
 FROM orders;
